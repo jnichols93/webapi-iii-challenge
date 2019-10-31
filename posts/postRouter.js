@@ -72,7 +72,7 @@ function validatePost(req, res, next) {
         res.status(400).json({message: "missing put data"})
         return
     }
-    if (!req.body.text) {
+   else if (!req.body.text) {
         res.status(400).json({message: "missing required text field"})
         return
     }
