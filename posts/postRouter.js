@@ -1,7 +1,7 @@
 const express = 'express';
 
 const router = express.Router();
-
+const validatePost = require("./middleware/validatePost");
 router.get('/', (req, res) => {
 
 });
@@ -24,4 +24,4 @@ function validatePostId(req, res, next) {
 
 };
 
-module.exports = router;
+module.exports = postRouter;
